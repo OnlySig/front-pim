@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Table, Button } from 'react-bootstrap';
-import {Layout, StyledInput, BodyLayout, BodyButton } from "./style";
+import {Layout, StyledInput, BodyLayout } from "./style";
 import { Navigate, useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import moment from 'moment';
@@ -42,7 +42,7 @@ function formatDate(date: Date){
 }
 
 function viewTask(){
-    navigate("/view_users")
+    navigate("/users")
 }
 
 function newTask(){
@@ -67,10 +67,7 @@ return (
         <br />
         <div className="user-header">
         <h1>Página de Usuários</h1>
-        <BodyButton>
-            <Button size="sm" variant="btn btn-outline-success" onClick= { newTask } >Novo Usuário</Button>
-            <Button size="sm" variant="btn btn-outline-success" onClick={() => viewTask()}>Pesquisar</Button>{' '}
-        </BodyButton>
+            <Button size="sm" variant="btn btn-outline-success" onClick= { viewTask } >Editar Usuário</Button>
     </div>
         <br />
         <Table striped bordered hover className="text-center">
@@ -83,7 +80,6 @@ return (
                 <th>DATA</th>
                 <th>MODELO</th>
                 <th>PAGAMENTO</th>
-                <th>AÇÕES</th>
                 </tr>
             </thead>
             <tbody>
@@ -97,10 +93,6 @@ return (
                     <td>{user.data}</td>
                     <td>{user.modelo}</td>
                     <td>{user.pagamento}</td>
-                    <td>
-                    <Button size="sm" variant="primary" onClick={() => editTask(user.id)}>Editar</Button>{' '}
-                    <Button size="sm" variant="danger" onClick={() => deleteTask(user.id)}>Remover</Button>{' '} 
-                    </td>
                     </tr>
                 ))
             }

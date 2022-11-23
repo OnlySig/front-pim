@@ -1,4 +1,7 @@
+//Editar Cliente
+
 import React, { useState, ChangeEvent, useEffect } from 'react';
+import { Layout, StyledInput, BodyLayout } from "./style";
 import { Button, Form } from 'react-bootstrap';
 import api from '../../services/api';
 import '../Users/Form/index.css';
@@ -72,14 +75,16 @@ const Users: React.FC = () => {
             pagamento: response.data.pagamento
         })
     }
-    
+
     return (
-      
+    <>
+    <BodyLayout>
+    <Layout>
       <div className="container">
             <br />
             <div className="user-header">
-                <h1>Editar um Cliente</h1>
-                <Button variant="dark" size="sm" onClick={back}>Voltar</Button>
+                <h1>Editar Cliente {id} </h1>
+                <Button variant="btn btn-outline-success" size="sm" onClick={back}>Voltar</Button>
             </div>
             <br />
             <div className="container">
@@ -148,13 +153,15 @@ const Users: React.FC = () => {
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}/>
                     </Form.Group>
                     <br/>
-                    <Button variant="dark" type="submit">
+                    <Button variant="btn btn-outline-success" type="submit">
                         Salvar
                     </Button>
                 </Form>
             </div>
         </div>
+        </Layout>
+        </BodyLayout>
+    </>
     );
 }
-
 export default Users;

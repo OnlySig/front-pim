@@ -1,3 +1,5 @@
+//Novo Usuário
+import {Layout, StyledInput, BodyLayout } from "./style";
 import React, { useState, ChangeEvent, useEffect } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import api from '../../../services/api';
@@ -74,13 +76,13 @@ const Users: React.FC = () => {
     }
 
     return (
-        
+    <>
+    <BodyLayout>
+    <Layout>
         <div className="container">
             <br />
-            <div className="user-header">
                 <h1>Cadastrar um novo Cliente</h1>
-                <Button variant="dark" size="sm" onClick={back}>Voltar</Button>
-            </div>
+                <Button variant="btn btn-outline-success" size="sm" onClick={back}>Voltar</Button>
             <br />
             <div className="container">
                 <Form onSubmit={onSubmit}>
@@ -147,13 +149,16 @@ const Users: React.FC = () => {
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}/>
                     </Form.Group>
                     <br/>
-                    <Button variant="dark" type="submit">
+                    <Button variant="btn btn-outline-success" type="submit">
                         Salvar
                     </Button>
                 </Form>
             </div>
         </div>
-    );
+    </Layout>
+    </BodyLayout>
+</>
+);
 }
 
 export default Users;

@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;500;600&family=VT323&display=swap');
+body {
+  height: 100vh;
+  background: #FFFFFF;
+}
+h1, a, p, label, h3, h2, h4 {
+  font-family: "Fredoka One", sans-serif;
+}
+
+h4 {
+  color: #0B1F3B;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #44494F;
+}
+footer {
+  overflow: hidden; /*tira ou "esconde" a bordinha q fica embaixo do footer :)*/
+}
+.corpo {
+  background: linear-gradient(246.01deg, #2C7AED 17.48%, #4BC3CC 66.19%);
+  width: 940px;
+  height: 550px;
+  border-radius: 0px 0px 300px;
+}
+.cabeca {
+  display: flex;
+  margin-left: 100px;
+}
+.cabeca h1{
+  color: #FFFFFF;
+  margin-top: 35px;
+  margin-right: 30px;
+  font-weight: 400;
+}
+.navi {
+  z-index: 3;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border-radius: 8px 0px 0px 8px;
+  margin-top: 40px;
+  width: 750px;
+  height: 40px;
+}
+.ancoras {
+  margin: 2px 0px 0px 9px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.ancora a {
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  top: -4px;
+}
+.ancora p{
+  font-size: 16px;
+  font-weight: 400px;
+  color: #134285;
+  margin-bottom: 0px;
+}
+.bsimu {
+  display: flex;
+  position: relative;
+  right: -300px;
+  bottom: 60px;
+  justify-content: flex-end;
+}
+.cotacao {
+  display: flex;
+  justify-content: center;
+  padding: 15px 25px 15px 25px;
+  width: 200px;
+  background: linear-gradient(89.8deg, #2C7AED 42.56%, #4BC3CC 88.58%);
+  color: #FFFFFF;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.info1 {
+  z-index: 3;
+  margin-left: 100px;
+  position: absolute;
+  top: 120px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  height: 339px;
+  width: 250px;
+}
+.info1 img {
+  margin-top: 10px;
+  margin-left: 115px;
+  height: 20px;
+  width: 20px;
+}
+.info1 h2 {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.info1 label {
+  font-weight: 400;
+  color: #44494F;
+  margin-left: 26px;
+}
+.info1 input {
+  align-items: center;
+  border: none;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  margin: 0px 0px 10px 27px;
+}
+.info1 a {
+  display: block;
+  margin: 0px auto 0px auto;
+  padding-top: 3px;
+  background: linear-gradient(89.8deg, #2C7AED 42.56%, #4BC3CC 88.58%);
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 8px;
+  height: 30px;
+  width: 150px;
+  text-decoration: none;
+}
+.risco {
+  background: #72CCAA;
+  width: 108px;
+  height: 6px;
+  margin-bottom: 5px;
+}
+.riscom {
+  background: #72CCAA;
+  width: 194px;
+  height: 6px;
+  margin-bottom: 5px;
+}
+.risco2 {
+  background: #4BC3CC;
+  width: 108px;
+  height: 6px;
+  margin-bottom: 5px;
+}
+.risco2m {
+  background: #4BC3CC;
+  width: 182px;
+  height: 6px;
+  margin-bottom: 5px;
+}
+.imageCar {
+  position: relative;
+  top: -60px;
+  z-index: 2;
+  height: 400px;
+}
+.img1 {
+  position: relative;
+  right: -940px;
+  bottom: 20px;
+  width: 250px;
+  height: 300px;
+  margin-top: 50px;
+  border-radius: 36px;
+}
+.img2 {
+  z-index: 2;
+  position: relative;
+  right: -500px;
+  bottom: 20px;
+  width: 300px;
+  height:400px;
+  margin-top: 50px;
+  border-radius: 36px;
+}
+.quadrado {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  z-index: 1; /*esse comando faz q um elemento se sobreponha a outro dependendo da prioridade de cada elemento*/
+}
+.triangulo {
+  position: relative;
+  top: -200px;
+}
+.bola {
+  position: relative;
+  top: -518px;
+  left: -260px;
+}
+.linha {
+  position: relative;
+  top: -800px;
+  width: 800px;
+  max-height: 500px;
+
+}
+.gear {
+  position: relative;
+  right: -150px;
+  bottom: -50px;
+}
+.meio1 {
+  display: flex;
+  justify-content: center;
+}
+.principais {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  position: relative;
+  right: -100px;
+  bottom: -20px;
+}
+.txt1 h3{
+  margin-top: 50px;
+  width: 350px;
+  height: 80;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  color: #0B1F3B;
+}
+.txt1 span {
+  display: block;
+  width: 500px;
+  height: 80;
+}
+.benes {
+  display: flex;
+}
+.benes img {
+  width: 78px;
+  height: 72px;
+}
+.principais span{
+  display: block;
+  max-width: 240px;
+}
+.incendio img{
+  width: 78px;
+  height: 72px;
+}
+.principais2 {
+  display: flex;
+}
+.meio2 {
+  display: flex;
+  margin-top: 100px;
+}
+.meio2 .principal {
+  display: flex;
+  gap: 10px;
+}
+.meio2 .background {
+  background: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
+  width: 500px;
+  border-radius: 0px 100px 80px 0px;
+}
+.meio2 .txt {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: -100px;
+  gap: 20px;
+}
+.meio2 .txt h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: #0B1F3B;
+}
+.meio2 .txt span {
+  width: 400px;
+}
+.meio2 .txt a {
+  text-align: center;
+  padding-top: 7px;
+  background: linear-gradient(89.8deg, #2C7AED 42.56%, #4BC3CC 88.58%);
+  color: #FFFFFF;
+  border-radius: 8px;
+  width: 183px;
+  height: 37px;
+  text-decoration: none;
+}
+.fim .principal1 {
+  display: flex;
+  justify-content: center;
+}
+.fim h2 {
+  text-align: center;
+  padding: 80px 0px;
+  color: #0B1F3B;
+  font-weight: 400;
+  font-size: 39px;
+}
+.fim .coluna1 {
+  display: flex;
+  gap: 150px;
+  margin-bottom: 50px;
+}
+.coluna1 img {
+  width: 78px;
+  height: 72px;
+}
+.coluna1 span {
+  display: block;
+  width: 230px;
+}
+.fim2 {
+  text-align: center;
+}
+.fim2 .title {
+  margin-top: 60px;
+}
+.fim2 h1 {
+  color: #0B1F3B;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 39px;
+  margin-bottom: 60px;
+}
+.fim2 .infoalign {
+  display: flex;
+  justify-content: center;
+}
+.fim2 .info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  background: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
+  border-radius: 16px;
+  width: 1000px;
+  margin-bottom: 200px;
+}
+.fim2 .info h3 {
+  padding: 10px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+.fim2 .info span {
+  padding: 10px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+footer .background1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
+  border-radius: 0px 80px 0px 0px;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
+footer .background1 h2 {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 39px;
+}
+footer .background1 span {
+  color: #FFFFFF;
+}
+footer .background1 .contato {
+  font-family: "Fredoka One", sans-serif;
+}
+footer .principal {
+  display: flex;
+  gap: 20px;
+}
+footer .principal .menu1{
+  position: relative;
+  bottom: -50px;
+  right: -78px;
+  color: #0B1F3B;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+}
+footer .principal a {
+  display: flex;
+  position: relative;
+  bottom: -110px;
+  right: 9px;
+  color: #0B1F3B;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+footer .principal .ancorasl {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-right: 60px;
+}
+footer .principal .ancorasl1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 60px;
+}
