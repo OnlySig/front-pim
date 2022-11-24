@@ -88,7 +88,7 @@ const Meio = () => {
         <span>
           Escolha um plano, inclua opcionais e faça o pagamento on-line.
         </span>
-        <a href="#">fazer uma cotação</a>
+        <a href="https://wa.me/5513991518147">fazer uma cotação</a>
       </div>
     </div>
   </div>

@@ -1,4 +1,12 @@
 import React from 'react'
+import roubo from '../src/img/roubo.png'
+import colisao from '../src/img/colisao-de-carro.png'
+import carroCapotado from '../src/img/carro-capotado.png'
+import chamas from '../src/img/carro-em-chamas.png'
+import salveCarro from '../src/img/salve-o-carro 1.svg'
+import parabrisa from '../src/img/parabrisa 1.svg'
+import carroPickup from '../src/img/carro-pickup 1.svg'
+import brasil from '../src/img/brasil.svg'
 
 const Meio2 = () => {
   return (
@@ -11,7 +19,7 @@ const Meio2 = () => {
       <div className="principal1">
         <div className="coluna1">
           <div className="furto">
-            <img src="./src/img/roubo.png" alt="roubo" />
+            <img src={roubo} alt="roubo" />
             <h4>
               Furto / Roubo
             </h4>
@@ -22,7 +30,7 @@ const Meio2 = () => {
             </span>
           </div>
           <div className="colisao">
-            <img src="./src/img/colisao-de-carro.png" alt="colisão" />
+            <img src={colisao} alt="colisão" />
             <h4>
               Colisão
             </h4>
@@ -33,7 +41,7 @@ const Meio2 = () => {
             </span>
           </div>
           <div className="Perda total">
-            <img src="./src/img/carro-capotado.png" alt="perdaTotal" />
+            <img src={carroCapotado} alt="perdaTotal" />
             <h4>
               Perda total
             </h4>
@@ -48,7 +56,7 @@ const Meio2 = () => {
       <div className="principal1">
         <div className="coluna1">
           <div className="Incêndio">
-            <img src="./src/img/carro-em-chamas.png" alt="Incêndio" />
+            <img src={chamas} alt="Incêndio" />
             <h4>
               Incêndio
             </h4>
@@ -59,7 +67,7 @@ const Meio2 = () => {
             </span>
           </div>
             <div className="Fenômenos naturais">
-              <img src="./src/img/salve-o-carro 1.svg" alt="fenômenosNaturais" />
+              <img src={salveCarro} alt="fenômenosNaturais" />
               <h4>
                 Fenômenos naturais
               </h4>
@@ -70,7 +78,7 @@ const Meio2 = () => {
               </span>
           </div>
             <div className="Proteção para terceiros">
-              <img src="./src/img/colisao-de-carro.png" alt="Proteção para terceiros" />
+              <img src={colisao} alt="Proteção para terceiros" />
               <h4>
                 Proteção para terceiros
               </h4>
@@ -85,7 +93,7 @@ const Meio2 = () => {
       <div className="principal1">
         <div className="coluna1">
           <div className="Incêndio">
-            <img src="./src/img/parabrisa 1.svg" alt="Parabrisa" />
+            <img src={parabrisa} alt="Parabrisa" />
             <h4>
               Cobertura para vidros
             </h4>
@@ -96,7 +104,7 @@ const Meio2 = () => {
             </span>
           </div>
             <div className="Fenômenos naturais">
-              <img src="./src/img/carro-pickup 1.svg" alt="Carro reserva" />
+              <img src={carroPickup} alt="Carro reserva" />
               <h4>
                 Carro reserva
               </h4>
@@ -107,7 +115,7 @@ const Meio2 = () => {
               </span>
           </div>
             <div className="Proteção para terceiros">
-              <img src="./src/img/brasil.svg" alt="brasil" />
+              <img src={brasil} alt="brasil" />
               <h4>
                 Cobertura em todo Brasil
               </h4>

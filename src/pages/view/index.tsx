@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Table, Button } from 'react-bootstrap';
-import {Layout, StyledInput, BodyLayout } from "./style";
-import { Navigate, useNavigate } from 'react-router-dom';
+import {Layout, BodyLayout, SpanForgot, H1style } from "./style";
+import { useNavigate, Link} from 'react-router-dom';
 import api from '../../services/api';
 import moment from 'moment';
 
@@ -66,8 +66,9 @@ return (
     <div className="container">
         <br />
         <div className="user-header">
-        <h1>Página de Usuários</h1>
-            <Button size="sm" variant="btn btn-outline-success" onClick= { viewTask } >Editar Usuário</Button>
+        <Link style={{ textDecoration: 'none' }} to="/"><SpanForgot>X</SpanForgot></Link>
+        <H1style><h1>Página de Cliente</h1></H1style>
+            <Button size="sm" variant="btn btn-outline-success" onClick= { viewTask } >Editar Cliente</Button>
     </div>
         <br />
         <Table striped bordered hover className="text-center">

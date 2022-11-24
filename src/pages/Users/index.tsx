@@ -66,9 +66,9 @@ return (
     <div className="container">
         <br />
         <div className="user-header">
-        <h1>Página de Usuários</h1>
+        <h1>Página de Cliente</h1>
         <BodyButton>
-            <Button size="sm" variant="btn btn-outline-success" onClick= { newTask } >Novo Usuário</Button>
+            <Button size="sm" variant="btn btn-outline-success" onClick= { newTask } >Novo Cliente</Button>
             <Button size="sm" variant="btn btn-outline-success" onClick={() => viewTask()}>Pesquisar</Button>{' '}
         </BodyButton>
     </div>

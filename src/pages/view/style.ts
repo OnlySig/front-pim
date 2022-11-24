@@ -1,5 +1,22 @@
 import styled from "styled-components";
 
+export const H1style = styled.div`
+    position: relative;
+    left: -300px;
+    top: -5px;
+`
+
+export const SpanForgot = styled.div`    
+    display: block;
+    align-self: flex-end;
+    text-align: center;
+    border-radius: 2rem;
+    color: #C0C0C0;
+    border: 2px solid #C0C0C0;
+    width: 25px;
+    height: 28px;
+`
+
 export const BodyLayout = styled.body`
     display: flex;
     align-items: center;
