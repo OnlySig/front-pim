@@ -1,5 +1,5 @@
 //Novo Usuário
-import {Layout, StyledInput, BodyLayout } from "./style";
+import {Layout, BodyLayout } from "./style";
 import React, { useState, ChangeEvent, useEffect } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import api from '../../../services/api';

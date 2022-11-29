@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Table, Button } from 'react-bootstrap';
-import {Layout, StyledInput, BodyLayout, BodyButton } from "./style";
-import { Navigate, useNavigate } from 'react-router-dom';
+import {Layout, BodyLayout, BodyButton } from "./style";
+import { useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import moment from 'moment';
 
