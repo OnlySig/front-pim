@@ -1,9 +1,4 @@
 export interface IFormData {
-  id: string;
-  placa: string;
+  email: string;
+  password: string;
 }
-// name: string;
-// status: string;
-// data: string;    
-// modelo: string;    
-// pagamento: string;  

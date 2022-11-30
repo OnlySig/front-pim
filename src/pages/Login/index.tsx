@@ -12,8 +12,8 @@ import { Input } from "../../components/Input/index";
 import { IFormData } from "./types.js";
 
 const schema = yup.object({
-  id: yup.number().required('Campo obrigatório'),
-  placa: yup.string().min(3,'No minimo 3 caracteres').required('Campo obrigatório'),
+  email: yup.string().email('email não é valido').required('Campo obrigatório'),
+  password: yup.string().min(6,'No minimo 6 caracteres').required('Campo obrigatório'),
 }).required();
 
 const Login = () => {  
@@ -25,7 +25,7 @@ const Login = () => {
   });
   
   const onSubmit = async (formData: IFormData) => {
-    const { data } = await apiLogin.get(`users?id=${formData.id}&placa=${formData.placa}`)
+    const { data } = await apiLogin.get(`users?email=${formData.email}&senha=${formData.password}`)
     try {
       if(data.length === 1) {
         navigate('/landingPage')
@@ -42,8 +42,8 @@ const Login = () => {
       <Layout>
       <span>Entrar no Safe<h1>Car</h1></span>
       <form onSubmit={handleSubmit(onSubmit)}>
-          <Input name='id' errorMessage={errors?.id?.message} control={control}  placeholder="Id" />
-          <Input name='placa' errorMessage={errors?.placa?.message} control={control}  placeholder="Placa"/>
+          <Input name='email' errorMessage={errors?.email?.message} control={control}  placeholder="Email" />
+          <Input name='password' errorMessage={errors?.password?.message} control={control}  placeholder="Password"/>
           <Button type="submit" title="Entrar" variant="secondary" /> 
       </form>
         <Link style={{ textDecoration: 'none' }} to="/register"><SpanForgot>Cadastrar-se</SpanForgot></Link>

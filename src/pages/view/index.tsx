@@ -66,7 +66,7 @@ return (
     <div className="container">
         <br />
         <div className="user-header">
-        <Link style={{ textDecoration: 'none' }} to="/"><SpanForgot>X</SpanForgot></Link>
+        <Link style={{ textDecoration: 'none' }} to="/landingPage"><SpanForgot>X</SpanForgot></Link>
         <H1style><h1>Página de Cliente</h1></H1style>
             <Button size="sm" variant="btn btn-outline-success" onClick= { viewTask } >Editar Cliente</Button>
     </div>
