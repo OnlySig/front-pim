@@ -1,10 +1,9 @@
 //Editar Cliente
 
 import React, { useState, ChangeEvent, useEffect } from 'react';
-import { Layout, StyledInput, BodyLayout } from "./style";
+import { Layout, BodyLayout } from "./style";
 import { Button, Form } from 'react-bootstrap';
 import api from '../../services/api';
-import '../Users/Form/index.css';
 import { useNavigate, useParams } from 'react-router-dom';
 
 interface IUser{    

@@ -20,7 +20,7 @@ const Footer = () => {
         </h2>
         <div className="ancorasl">
           <a href="#">Home</a>
-          <a href="#">serviços</a>
+          <a href="#">Serviços</a>
         </div>
         <div className="ancorasl1">
           <a href="#">Preços</a>

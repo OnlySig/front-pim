@@ -28,7 +28,7 @@ const Login = () => {
     const { data } = await apiLogin.get(`users?email=${formData.email}&senha=${formData.password}`)
     try {
       if(data.length === 1) {
-        navigate('/landingPage')
+        navigate('/view_users')
       } else {
         alert('Email ou senha invalidos')
       }
@@ -46,8 +46,8 @@ const Login = () => {
           <Input name='password' errorMessage={errors?.password?.message} control={control}  placeholder="Password"/>
           <Button type="submit" title="Entrar" variant="secondary" /> 
       </form>
-        <Link style={{ textDecoration: 'none' }} to="/register"><SpanForgot>Cadastrar-se</SpanForgot></Link>
-        <Link style={{ textDecoration: 'none' }} to="/recover"><SpanForgot>Esqueci minha senha</SpanForgot></Link>
+        {/* <Link style={{ textDecoration: 'none' }} to="/register"><SpanForgot>Cadastrar-se</SpanForgot></Link>
+        <Link style={{ textDecoration: 'none' }} to="/recover"><SpanForgot>Esqueci minha senha</SpanForgot></Link> */}
         </Layout>
       </>
   )

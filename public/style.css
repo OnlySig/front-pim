@@ -53,9 +53,10 @@ footer {
 .ancoras {
   margin: 2px 0px 0px 9px;
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  gap: 100px;
+  left: -40px;
   position: relative;
-  left: -30px;
 }
 .ancora a {
   align-items: center;

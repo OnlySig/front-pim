@@ -14,7 +14,7 @@ const Header = () => {
           <li className="ancora"><a href="#Protecao"><p>Proteção Veicular</p></a></li>
           <li className="ancora"><a href="#Beneficios"><p>Benefícios</p></a></li>
           <li className="ancora"><a href="#Assistencia"><p>Assistência 24 horas</p></a></li>
-          <li className="ancora"><a href="/view_users"><p>Listas Usuários</p></a></li>
+
         </ul>
       </nav>
       <div className="info1">
